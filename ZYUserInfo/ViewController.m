@@ -19,13 +19,14 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    zy_info.token = @"sjkldfjlksdjf";
-    zy_info.isLogin = YES;
-    zy_info.dic = @{@"name": @"张三", @"age": @"16"};
-    zy_info.arr = @[@"1", @(2), @"3"];
-    zy_info.index = 1;
+    x_info.token = @"sjkldfjlksdjf";
+    x_info.isLogin = YES;
+    x_info.dic = @{@"name": @"张三", @"age": @"16"};
+    x_info.arr = @[@"1", @(2), @"3"];
+    x_info.index = 1;
     
-    NSLog(@"%@", zy_info);
+    NSLog(@"%@", x_info);
+    
 }
 
 

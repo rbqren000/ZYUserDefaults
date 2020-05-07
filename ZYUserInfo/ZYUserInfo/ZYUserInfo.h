@@ -11,7 +11,7 @@
 /**
  *  宏定义方便使用 可以改成你想要的名称 建议不要定义成"info"这类过于简单的字样 容易发生冲突
  */
-#define zy_info [ZYUserInfo shareInstance]
+#define x_info [ZYUserInfo shareInstance]
 
 /**
  *  数据存储工具类

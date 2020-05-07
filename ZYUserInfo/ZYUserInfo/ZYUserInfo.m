@@ -46,7 +46,7 @@
 }
 
 /**
- *  KVO
+ *  设置监听
  */
 - (void)addObserver {
     NSArray *propertys = self.propertyList;

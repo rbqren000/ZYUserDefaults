@@ -24,7 +24,16 @@
     x_info.dic = @{@"name": @"张三", @"age": @"16"};
     x_info.arr = @[@"1", @(2), @"3"];
     x_info.index = 1;
+    x_info.intA = 2;
     
+    x_info.number = @(3.04);
+    x_info.floatA = 3.01;
+    x_info.doubleA = 4.03;
+    x_info.longA = 5l;
+    
+
+//    [x_info clean];
+   
     NSLog(@"%@", x_info);
     
 }

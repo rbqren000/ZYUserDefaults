@@ -31,10 +31,12 @@
     x_info.doubleA = 4.03;
     x_info.longA = 5l;
     
-
-//    [x_info clean];
    
     NSLog(@"%@", x_info);
+    
+    [x_info clean];
+    
+    NSLog(@"清理后:%@", x_info);
     
 }
 

@@ -68,15 +68,16 @@
     if (!_propertyList) {
         _propertyList = [NSMutableArray array];
         unsigned count = 0;
-        // 设置屏蔽属性
+        // 设置屏蔽属性 屏蔽两个不需存储的属性
         NSArray *ignores = @[@"propertyList", @"ud"];
         objc_property_t *properties = class_copyPropertyList(self.class, &count);
         for (NSInteger i = 0; i < count; i++) {
-            NSString *prop = [NSString stringWithFormat:@"%s", property_getName(properties[i])];
-            if ([ignores containsObject:prop]) {
+            objc_property_t property = properties[i];
+            NSString *propertyName = [NSString stringWithCString:property_getName(property) encoding:NSUTF8StringEncoding];
+            if ([ignores containsObject:propertyName]) {
                 continue;
             }
-            [_propertyList addObject:prop];
+            [_propertyList addObject:propertyName];
         }
         free(properties);
     }

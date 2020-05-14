@@ -7,10 +7,6 @@
 > 存储数据
 
 ```
-
-使用方法
-
-
 x_info.token = @"sjkldfjlksdjf";
 x_info.isLogin = YES;
 x_info.dic = @{@"name": @"张三", @"age": @"16"};

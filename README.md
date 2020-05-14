@@ -67,11 +67,11 @@ NSLog(@"%@", x_info);
   "doubleA" : 4.0300000000000002
 }
 
+```
 
 > 清除数据
 
 ```
-
 [x_info clean];
 NSLog(@"%@", x_info);
 
@@ -113,17 +113,32 @@ x_info
 (lldb) po ZYUserInfo.shareInstance
 <ZYUserInfo: 0x60000149d3b0> 
  {
-  "number" : 0,
+  "marr" : [
+    "123",
+    "123",
+    "1234"
+  ],
+  "index" : 1,
+  "intA" : 2,
+  "isLogin" : true,
+  "dic" : {
+    "name" : "张三",
+    "age" : "16"
+  },
   "haha" : "我是空的nil",
-  "floatA" : 0,
-  "longA" : 0,
-  "doubleA" : 0,
-  "arr" : "我是空的nil",
-  "dic" : "我是空的nil",
-  "token" : "我是空的nil",
-  "isLogin" : false,
-  "intA" : 0,
-  "index" : 0
-} 
+  "arr" : [
+    "1",
+    2,
+    "3"
+  ],
+  "token" : "sjkldfjlksdjf",
+  "number" : 3.04,
+  "floatA" : 3.0099999904632568,
+  "mdic" : {
+    "name" : "mdic"
+  },
+  "longA" : 5,
+  "doubleA" : 4.0300000000000002
+}
 ```
 

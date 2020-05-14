@@ -31,13 +31,18 @@
     x_info.doubleA = 4.03;
     x_info.longA = 5l;
     
-   
+    // 注意ZYUserInfo尽量不要使用可变类型的变量, 比如可变数组
+    // 如果确实需要使用, 请注意使用规范
+    x_info.marr = @[@"123"].mutableCopy;
+    
+    // 增加值后比如再次进行数组赋值才能监听到并存储
+    [x_info.marr addObject:@"123"];
+    x_info.marr = x_info.marr;
+    
+    // 或者是使用如下方法, 进行赋值就可以做到实时存储的效果了
+    [[x_info mutableArrayValueForKey:@"marr"] addObject:@"1234"];
+    
     NSLog(@"%@", x_info);
-    
-    [x_info clean];
-    
-    NSLog(@"清理后:%@", x_info);
-    
 }
 
 

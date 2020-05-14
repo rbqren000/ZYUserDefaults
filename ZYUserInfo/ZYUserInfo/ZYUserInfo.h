@@ -32,6 +32,8 @@
 @property (assign, nonatomic) float floatA;
 @property (assign, nonatomic) long longA;
 @property (assign, nonatomic) double doubleA;
+@property (strong, nonatomic) NSMutableArray *marr;
+@property (strong, nonatomic) NSMutableDictionary *mdic;
 
 /**
  *  单例初始化

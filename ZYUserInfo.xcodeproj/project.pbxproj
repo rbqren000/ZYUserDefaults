@@ -15,6 +15,7 @@
 		9A1DE978246413B00060239E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A1DE976246413B00060239E /* LaunchScreen.storyboard */; };
 		9A1DE97B246413B00060239E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A1DE97A246413B00060239E /* main.m */; };
 		9A1DE984246413C70060239E /* ZYUserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A1DE983246413C70060239E /* ZYUserInfo.m */; };
+		9AD49D35246D273D0030EF47 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 9AD49D34246D273D0030EF47 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		9A1DE97A246413B00060239E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9A1DE982246413C70060239E /* ZYUserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYUserInfo.h; sourceTree = "<group>"; };
 		9A1DE983246413C70060239E /* ZYUserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYUserInfo.m; sourceTree = "<group>"; };
+		9AD49D34246D273D0030EF47 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 				9A1DE976246413B00060239E /* LaunchScreen.storyboard */,
 				9A1DE979246413B00060239E /* Info.plist */,
 				9A1DE97A246413B00060239E /* main.m */,
+				9AD49D34246D273D0030EF47 /* README.md */,
 			);
 			path = ZYUserInfo;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 			files = (
 				9A1DE978246413B00060239E /* LaunchScreen.storyboard in Resources */,
 				9A1DE975246413B00060239E /* Assets.xcassets in Resources */,
+				9AD49D35246D273D0030EF47 /* README.md in Resources */,
 				9A1DE973246413A90060239E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

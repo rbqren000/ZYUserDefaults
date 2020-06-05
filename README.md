@@ -1,6 +1,6 @@
-# ZYUserInfo
+# ZYUserDefaults
 # 一.前言
-正如标题所述, ZYUserInfo是一款个轻量化存储工具类, 它是对NSUserDefaults的封装, 可以方便的进行轻量化存储, 大大的提高了代码效率, 并且完全不依赖于第三方, 不使用私有API, 存储过程使用KVO进行属性监听.
+正如标题所述, ZYUserDefaults是一款个轻量化存储工具类, 它是对NSUserDefaults的封装, 可以方便的进行轻量化存储, 大大的提高了代码效率, 并且完全不依赖于第三方, 不使用私有API, 存储过程使用KVO进行属性监听.
 
 # 二.使用方法
 

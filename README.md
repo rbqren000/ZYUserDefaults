@@ -93,8 +93,8 @@ NSLog(@"%@", x_info);
 当我们使用宏变量来打印的时候可能出现下面的情况
 
 ```
-(lldb) po x_info
-error: <user expression 7>:1:1: use of undeclared identifier 'x_info'
+(lldb) po x_store
+error: <user expression 7>:1:1: use of undeclared identifier 'x_store'
 x_info
 ^
 ```

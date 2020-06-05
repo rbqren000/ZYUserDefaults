@@ -14,12 +14,12 @@
 		9A1DE975246413B00060239E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A1DE974246413B00060239E /* Assets.xcassets */; };
 		9A1DE978246413B00060239E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A1DE976246413B00060239E /* LaunchScreen.storyboard */; };
 		9A1DE97B246413B00060239E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A1DE97A246413B00060239E /* main.m */; };
-		9A1DE984246413C70060239E /* ZYUserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A1DE983246413C70060239E /* ZYUserInfo.m */; };
+		9A818E602489EE86003EC518 /* ZYUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A818E5F2489EE86003EC518 /* ZYUserDefaults.m */; };
 		9AD49D35246D273D0030EF47 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 9AD49D34246D273D0030EF47 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9A1DE965246413A90060239E /* ZYUserInfo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZYUserInfo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A1DE965246413A90060239E /* ZYUserDefaults.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZYUserDefaults.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A1DE968246413A90060239E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9A1DE969246413A90060239E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		9A1DE96B246413A90060239E /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
@@ -31,8 +31,8 @@
 		9A1DE977246413B00060239E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9A1DE979246413B00060239E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A1DE97A246413B00060239E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		9A1DE982246413C70060239E /* ZYUserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYUserInfo.h; sourceTree = "<group>"; };
-		9A1DE983246413C70060239E /* ZYUserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYUserInfo.m; sourceTree = "<group>"; };
+		9A818E5E2489EE86003EC518 /* ZYUserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYUserDefaults.h; sourceTree = "<group>"; };
+		9A818E5F2489EE86003EC518 /* ZYUserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYUserDefaults.m; sourceTree = "<group>"; };
 		9AD49D34246D273D0030EF47 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -50,7 +50,7 @@
 		9A1DE95C246413A90060239E = {
 			isa = PBXGroup;
 			children = (
-				9A1DE967246413A90060239E /* ZYUserInfo */,
+				9A1DE967246413A90060239E /* ZYUserDefaults */,
 				9A1DE966246413A90060239E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -58,15 +58,15 @@
 		9A1DE966246413A90060239E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9A1DE965246413A90060239E /* ZYUserInfo.app */,
+				9A1DE965246413A90060239E /* ZYUserDefaults.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9A1DE967246413A90060239E /* ZYUserInfo */ = {
+		9A1DE967246413A90060239E /* ZYUserDefaults */ = {
 			isa = PBXGroup;
 			children = (
-				9A1DE981246413BD0060239E /* ZYUserInfo */,
+				9A818E5D2489EE86003EC518 /* ZYUserDefaults */,
 				9A1DE968246413A90060239E /* AppDelegate.h */,
 				9A1DE969246413A90060239E /* AppDelegate.m */,
 				9A1DE96B246413A90060239E /* SceneDelegate.h */,
@@ -80,24 +80,24 @@
 				9A1DE97A246413B00060239E /* main.m */,
 				9AD49D34246D273D0030EF47 /* README.md */,
 			);
-			path = ZYUserInfo;
+			path = ZYUserDefaults;
 			sourceTree = "<group>";
 		};
-		9A1DE981246413BD0060239E /* ZYUserInfo */ = {
+		9A818E5D2489EE86003EC518 /* ZYUserDefaults */ = {
 			isa = PBXGroup;
 			children = (
-				9A1DE982246413C70060239E /* ZYUserInfo.h */,
-				9A1DE983246413C70060239E /* ZYUserInfo.m */,
+				9A818E5E2489EE86003EC518 /* ZYUserDefaults.h */,
+				9A818E5F2489EE86003EC518 /* ZYUserDefaults.m */,
 			);
-			path = ZYUserInfo;
+			path = ZYUserDefaults;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9A1DE964246413A90060239E /* ZYUserInfo */ = {
+		9A1DE964246413A90060239E /* ZYUserDefaults */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9A1DE97E246413B00060239E /* Build configuration list for PBXNativeTarget "ZYUserInfo" */;
+			buildConfigurationList = 9A1DE97E246413B00060239E /* Build configuration list for PBXNativeTarget "ZYUserDefaults" */;
 			buildPhases = (
 				9A1DE961246413A90060239E /* Sources */,
 				9A1DE962246413A90060239E /* Frameworks */,
@@ -107,9 +107,9 @@
 			);
 			dependencies = (
 			);
-			name = ZYUserInfo;
+			name = ZYUserDefaults;
 			productName = ZYUserInfo;
-			productReference = 9A1DE965246413A90060239E /* ZYUserInfo.app */;
+			productReference = 9A1DE965246413A90060239E /* ZYUserDefaults.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -126,7 +126,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 9A1DE960246413A90060239E /* Build configuration list for PBXProject "ZYUserInfo" */;
+			buildConfigurationList = 9A1DE960246413A90060239E /* Build configuration list for PBXProject "ZYUserDefaults" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -139,7 +139,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9A1DE964246413A90060239E /* ZYUserInfo */,
+				9A1DE964246413A90060239E /* ZYUserDefaults */,
 			);
 		};
 /* End PBXProject section */
@@ -166,7 +166,7 @@
 				9A1DE970246413A90060239E /* ViewController.m in Sources */,
 				9A1DE96A246413A90060239E /* AppDelegate.m in Sources */,
 				9A1DE97B246413B00060239E /* main.m in Sources */,
-				9A1DE984246413C70060239E /* ZYUserInfo.m in Sources */,
+				9A818E602489EE86003EC518 /* ZYUserDefaults.m in Sources */,
 				9A1DE96D246413A90060239E /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -308,12 +308,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = ZYUserInfo/Info.plist;
+				INFOPLIST_FILE = ZYUserDefaults/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = objcat.ZYUserInfo;
+				PRODUCT_BUNDLE_IDENTIFIER = objcat.ZYUserDefaults;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -324,12 +324,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = ZYUserInfo/Info.plist;
+				INFOPLIST_FILE = ZYUserDefaults/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = objcat.ZYUserInfo;
+				PRODUCT_BUNDLE_IDENTIFIER = objcat.ZYUserDefaults;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -338,7 +338,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9A1DE960246413A90060239E /* Build configuration list for PBXProject "ZYUserInfo" */ = {
+		9A1DE960246413A90060239E /* Build configuration list for PBXProject "ZYUserDefaults" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9A1DE97C246413B00060239E /* Debug */,
@@ -347,7 +347,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9A1DE97E246413B00060239E /* Build configuration list for PBXNativeTarget "ZYUserInfo" */ = {
+		9A1DE97E246413B00060239E /* Build configuration list for PBXNativeTarget "ZYUserDefaults" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9A1DE97F246413B00060239E /* Debug */,

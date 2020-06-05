@@ -1,34 +1,36 @@
 //
-//  ZYUserInfo.m
+//  ZYUserDefaults.m
 //  ZYKit
 //
 //  Created by 张祎 on 2020/5/7.
 //  Copyright © 2020 objcat. All rights reserved.
 //
 
-#import "ZYUserInfo.h"
+#import "ZYUserDefaults.h"
 #import "objc/runtime.h"
 
-@interface ZYUserInfo ()
+@interface ZYUserDefaults ()
 @property (strong, nonatomic) NSUserDefaults *ud;
 @property (strong, nonatomic) NSMutableArray *propertyList;
 @end
 
-@implementation ZYUserInfo
+@implementation ZYUserDefaults
 
 /**
  *  单例
  */
 + (instancetype)shareInstance {
-    static ZYUserInfo *info = nil;
+    static ZYUserDefaults *info = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        info = [[ZYUserInfo alloc] init];
-        // 自定义保存位置 不喜欢 standardUserDefaults - -
-        info.ud = [[NSUserDefaults alloc] initWithSuiteName:@"zy_info"];
+        info = [[ZYUserDefaults alloc] init];
+        // 设置ud路径
+        info.ud = [[NSUserDefaults alloc] initWithSuiteName:@"zy_ud"];
+        // 绑定数据
         [info bindData];
+        // 监听数据变化
         [info addObserver];
-        NSLog(@"ZYUserInfo启动成功, 保存路径: \n %@/Preferences/zy_info.plist", [NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES) lastObject]);
+        NSLog(@"ZYUserDefaults启动成功, 保存路径: \n %@/Preferences/zy_ud.plist", [NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES) lastObject]);
     });
     return info;
 }
@@ -127,10 +129,6 @@
 
 - (void)dealloc {
     // 由于是单例 所以不用担心释放的问题 固不用移除
-    //        NSArray *propertys = self.propertyList;
-    //        for (NSString *property in propertys) {
-    //            [self removeObserver:self forKeyPath:property];
-    //        }
 }
 
 @end

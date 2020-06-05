@@ -1,5 +1,5 @@
 //
-//  ZYUserInfo.h
+//  ZYUserDefaults.h
 //  ZYKit
 //
 //  Created by 张祎 on 2020/5/7.
@@ -13,14 +13,13 @@
  *  可以改成你想要的名称
  *  建议不要命名成"info"这类过于简单的字样 容易发生冲突
  */
-#define x_info [ZYUserInfo shareInstance]
+#define x_store [ZYUserDefaults shareInstance]
 
 /**
  *  数据存储工具类
- *  默认存储到 zy_info.plist
- *  可以存储基本数据类型和
+ *  默认存储到 zy_ud.plist
  */
-@interface ZYUserInfo : NSObject
+@interface ZYUserDefaults : NSObject
 @property (strong, nonatomic) NSString *token;
 @property (assign, nonatomic) BOOL isLogin;
 @property (strong, nonatomic) NSDictionary *dic;

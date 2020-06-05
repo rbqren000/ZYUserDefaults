@@ -43,6 +43,8 @@
     [[x_store mutableArrayValueForKey:@"marr"] addObject:@"1234"];
     
     NSLog(@"%@", x_store);
+    
+    
 }
 
 

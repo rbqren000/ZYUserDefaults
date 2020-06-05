@@ -94,7 +94,7 @@ NSLog(@"%@", x_info);
 
 ```
 (lldb) po x_store
-error: <user expression 7>:1:1: use of undeclared identifier 'x_info'
+error: <user expression 7>:1:1: use of undeclared identifier 'x_store'
 x_info
 ^
 ```

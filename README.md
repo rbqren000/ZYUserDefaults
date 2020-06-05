@@ -7,33 +7,31 @@
 > 存储数据
 
 ```
-x_info.token = @"sjkldfjlksdjf";
-x_info.isLogin = YES;
-x_info.dic = @{@"name": @"张三", @"age": @"16"};
-x_info.arr = @[@"1", @(2), @"3"];
-x_info.index = 1;
-x_info.intA = 2;
+x_store.token = @"sjkldfjlksdjf";
+x_store.isLogin = YES;
+x_store.dic = @{@"name": @"张三", @"age": @"16"};
+x_store.arr = @[@"1", @(2), @"3"];
+x_store.index = 1;
+x_store.intA = 2;
 
-x_info.number = @(3.04);
-x_info.floatA = 3.01;
-x_info.doubleA = 4.03;
-x_info.longA = 5l;
+x_store.number = @(3.01);
+x_store.floatA = 3.01;
+x_store.doubleA = 4.03;
+x_store.longA = 5l;
 
-// 注意ZYUserInfo尽量不要使用可变类型的变量, 比如可变数组
+// 注意ZYUserDefaults尽量不要使用可变类型的变量, 比如可变数组
 // 如果确实需要使用, 请注意使用规范
-x_info.marr = @[@"123"].mutableCopy;
+x_store.marr = @[@"123"].mutableCopy;
 
 // 增加值后比如再次进行数组赋值才能监听到并存储
-[x_info.marr addObject:@"123"];
-x_info.marr = x_info.marr;
+[x_store.marr addObject:@"123"];
+x_store.marr = x_store.marr;
 
 // 或者是使用如下方法, 进行赋值就可以做到实时存储的效果了
-[[x_info mutableArrayValueForKey:@"marr"] addObject:@"1234"];
-
-NSLog(@"%@", x_info);
+[[x_store mutableArrayValueForKey:@"marr"] addObject:@"1234"];
 
 
-2020-05-14 16:04:57.556639+0800 ZYUserInfo[12399:279481] <ZYUserInfo: 0x600003dbdf80> 
+2020-06-05 11:12:11.325905+0800 ZYUserDefaults[6743:97412] <ZYUserDefaults: 0x600001f76d80> 
  {
   "marr" : [
     "123",
@@ -56,9 +54,7 @@ NSLog(@"%@", x_info);
   "token" : "sjkldfjlksdjf",
   "number" : 3.04,
   "floatA" : 3.0099999904632568,
-  "mdic" : {
-    "name" : "mdic"
-  },
+  "mdic" : "我是空的nil",
   "longA" : 5,
   "doubleA" : 4.0300000000000002
 }
@@ -92,7 +88,7 @@ NSLog(@"%@", x_info);
 
 # 三.注意事项
 
-> 宏变量并不支持打印
+> 宏变量并不支持po
 
 当我们使用宏变量来打印的时候可能出现下面的情况
 
@@ -103,10 +99,10 @@ x_info
 ^
 ```
 
-所以我们直接使用`ZYUserInfo`类进行打印, 就可以达到我们预期的效果了, 宏变量只是为了使用方便简化代码
+所以我们直接使用`ZYUserDefaults`类进行打印, 就可以达到我们预期的效果了, 宏变量只是为了使用方便简化代码
 
 ```
-(lldb) po ZYUserInfo.shareInstance
+(lldb) po ZYUserDefaults.shareInstance
 <ZYUserInfo: 0x60000149d3b0> 
  {
   "marr" : [

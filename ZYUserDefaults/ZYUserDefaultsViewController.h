@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "XStore.h"
+#import "ExampleUserDefaults.h"
 #import "EHFormTableView.h"
 
 @interface ZYUserDefaultsViewController : UIViewController

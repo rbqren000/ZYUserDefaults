@@ -1,5 +1,5 @@
 //
-//  XStore.h
+//  ExampleUserDefaults.h
 //  ZYUserDefaults
 //
 //  Created by objcat on 2022/1/26.
@@ -9,9 +9,9 @@
 #import "ZYUserDefaults.h"
 #import <UIKit/UIKit.h>
 
-#define x_store XStore.shareInstance
+#define x_store ExampleUserDefaults.shareInstance
 
-@interface XStore : ZYUserDefaults
+@interface ExampleUserDefaults : ZYUserDefaults
 @property (strong, nonatomic) NSString *testString;
 @property (strong, nonatomic) NSNumber *testNumber;
 @property (strong, nonatomic) NSArray *testArray;

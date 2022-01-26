@@ -8,7 +8,7 @@
 
 import UIKit
 
-let x_store: XStore = XStore.shareInstance()
+let x_store: ExampleUserDefaults = ExampleUserDefaults.shareInstance()
 
 class SwiftExampleViewController: ZYUserDefaultsViewController {
     
@@ -70,6 +70,11 @@ class SwiftExampleViewController: ZYUserDefaultsViewController {
         self.tableView.addNormalRow(withName: "NSNull测试", value: "", cellClass: EHTapTableViewCell.self, rowHeight: 44) { model, eventType, dictionary in
             x_store.testString = NSNull() as? String
             // swift的设计就相当安全 当类型不同的时候 直接把值置为nil 其他的就不测试了
+            print(x_store)
+        }
+        
+        self.tableView.addNormalRow(withName: "清除数据", value: "", cellClass: EHTapTableViewCell.self, rowHeight: 44) { model, eventType, dictionary in
+            x_store.clean()
             print(x_store)
         }
         

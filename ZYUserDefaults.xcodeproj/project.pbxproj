@@ -15,7 +15,7 @@
 		2D31D43F27A1398B0004188B /* EHTapTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D31D43D27A1398B0004188B /* EHTapTableViewCell.xib */; };
 		2D31D44027A1398B0004188B /* EHTapTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D31D43E27A1398B0004188B /* EHTapTableViewCell.m */; };
 		2D31D44927A13CE40004188B /* SwiftExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D31D44827A13CE40004188B /* SwiftExampleViewController.swift */; };
-		2D31D44E27A13DB30004188B /* XStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D31D44D27A13DB30004188B /* XStore.m */; };
+		2D31D44E27A13DB30004188B /* ExampleUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D31D44D27A13DB30004188B /* ExampleUserDefaults.m */; };
 		2D31D45127A13F370004188B /* ZYUserDefaultsExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D31D45027A13F370004188B /* ZYUserDefaultsExampleViewController.m */; };
 		2D31D45427A13FB10004188B /* ZYUserDefaultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D31D45327A13FB10004188B /* ZYUserDefaultsViewController.m */; };
 		9A1DE96A246413A90060239E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A1DE969246413A90060239E /* AppDelegate.m */; };
@@ -43,8 +43,8 @@
 		2D31D43E27A1398B0004188B /* EHTapTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EHTapTableViewCell.m; sourceTree = "<group>"; };
 		2D31D44727A13CE40004188B /* ZYUserDefaults-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZYUserDefaults-Bridging-Header.h"; sourceTree = "<group>"; };
 		2D31D44827A13CE40004188B /* SwiftExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftExampleViewController.swift; sourceTree = "<group>"; };
-		2D31D44C27A13DB30004188B /* XStore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XStore.h; sourceTree = "<group>"; };
-		2D31D44D27A13DB30004188B /* XStore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XStore.m; sourceTree = "<group>"; };
+		2D31D44C27A13DB30004188B /* ExampleUserDefaults.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExampleUserDefaults.h; sourceTree = "<group>"; };
+		2D31D44D27A13DB30004188B /* ExampleUserDefaults.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExampleUserDefaults.m; sourceTree = "<group>"; };
 		2D31D44F27A13F370004188B /* ZYUserDefaultsExampleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYUserDefaultsExampleViewController.h; sourceTree = "<group>"; };
 		2D31D45027A13F370004188B /* ZYUserDefaultsExampleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYUserDefaultsExampleViewController.m; sourceTree = "<group>"; };
 		2D31D45227A13FB10004188B /* ZYUserDefaultsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYUserDefaultsViewController.h; sourceTree = "<group>"; };
@@ -190,8 +190,8 @@
 				9A1DE97A246413B00060239E /* main.m */,
 				9AD49D34246D273D0030EF47 /* README.md */,
 				2D31D44727A13CE40004188B /* ZYUserDefaults-Bridging-Header.h */,
-				2D31D44C27A13DB30004188B /* XStore.h */,
-				2D31D44D27A13DB30004188B /* XStore.m */,
+				2D31D44C27A13DB30004188B /* ExampleUserDefaults.h */,
+				2D31D44D27A13DB30004188B /* ExampleUserDefaults.m */,
 				2D31D44827A13CE40004188B /* SwiftExampleViewController.swift */,
 				2D31D44F27A13F370004188B /* ZYUserDefaultsExampleViewController.h */,
 				2D31D45027A13F370004188B /* ZYUserDefaultsExampleViewController.m */,
@@ -292,7 +292,7 @@
 				2D31D44927A13CE40004188B /* SwiftExampleViewController.swift in Sources */,
 				2D31D43027A136AC0004188B /* EHFormModel.m in Sources */,
 				2D31D45127A13F370004188B /* ZYUserDefaultsExampleViewController.m in Sources */,
-				2D31D44E27A13DB30004188B /* XStore.m in Sources */,
+				2D31D44E27A13DB30004188B /* ExampleUserDefaults.m in Sources */,
 				9A818E602489EE86003EC518 /* ZYUserDefaults.m in Sources */,
 				9A1DE96D246413A90060239E /* SceneDelegate.m in Sources */,
 				2D31D44027A1398B0004188B /* EHTapTableViewCell.m in Sources */,

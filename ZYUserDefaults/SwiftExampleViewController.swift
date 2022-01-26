@@ -12,14 +12,11 @@ let x_store: ExampleUserDefaults = ExampleUserDefaults.shareInstance()
 
 class SwiftExampleViewController: ZYUserDefaultsViewController {
     
-    
-
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
-    
     
     override func addRows() {
         
@@ -82,5 +79,4 @@ class SwiftExampleViewController: ZYUserDefaultsViewController {
             print(x_store)
         }
     }
-
 }

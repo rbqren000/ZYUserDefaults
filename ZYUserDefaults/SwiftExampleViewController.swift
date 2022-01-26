@@ -27,6 +27,7 @@ class SwiftExampleViewController: ZYUserDefaultsViewController {
             x_store.testArray = ["1", "2", "3"]
             x_store.testMutableArray = ["1", "2", "3"]
             x_store.testDictionary = ["name": "张三", "age": "18"]
+            x_store.testMutableDictionary = ["name": "张三", "age": "18"]
             x_store.testData = Data()
             x_store.testDate = Date()
             x_store.testTimeInterval = 1
@@ -49,18 +50,19 @@ class SwiftExampleViewController: ZYUserDefaultsViewController {
             x_store.testArray = nil
             x_store.testMutableArray = nil
             x_store.testDictionary = nil
+            x_store.testMutableDictionary = nil
             x_store.testData = nil
             x_store.testDate = nil
-            x_store.testTimeInterval = 1
-            x_store.testInteger = 1
-            x_store.testUInteger = 2
-            x_store.testInt = 1
-            x_store.testLong = 11
-            x_store.testFloat = 0.2
-            x_store.testDouble = 0.22
-            x_store.testCGFloat = 0.222
-            x_store.testBool = true
-            x_store.testBoolean = true
+            x_store.testTimeInterval = 0
+            x_store.testInteger = 0
+            x_store.testUInteger = 0
+            x_store.testInt = 0
+            x_store.testLong = 0
+            x_store.testFloat = 0
+            x_store.testDouble = 0
+            x_store.testCGFloat = 0
+            x_store.testBool = false
+            x_store.testBoolean = false
             print(x_store)
         }
         
